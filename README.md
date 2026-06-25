@@ -1,4 +1,4 @@
-# Titanic Survival Prediction
+# Titanic Survival Prediction using Logistic Regression
 
 This Project contains the implementation of a **Logistic Regression** model built completely from scratch to predict whether passengers survived the Titanic shipwreck. This project includes data exploration, preprocessing, model training, and submission to the Kaggle competition.
 

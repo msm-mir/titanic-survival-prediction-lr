@@ -12,12 +12,33 @@ The project is implemented in a Jupyter Notebook and the goal is to build a bina
 
 ## Pipeline Workflow
 
-- Data Loading: Loading Datasets as Pandas DataFrames from the local directory.
-- Exploratory Data Analysis: Visualizing survival distributions and feature correlations.
-- Data Preprocessing: Droping unused features, encoding categorical features, handling missing values, and scaling numerical features.
-- Model Training: Training a **Logistic Regression** classifier, plotting convergence curve, and predicting the labels.
-- Evaluation Metrics: Calculating accuracy, confusion matrix, recall, precision, and f1 score.
-- Inference: Making predictions on the unseen test set and generating a Kaggle-compliant submission file.
+### 1. Data Loading
+- Loading Datasets as Pandas DataFrames from the local directory
+
+### 2. Exploratory Data Analysis
+- Visualizing survival distributions using `seaborn.countplot`
+- Visualizing feature correlations using `seaborn.heatmap`
+
+### 3. Data Preprocessing
+- Droping unused features to eliminate noise and prevent overfitting
+- Encoding categorical features using One-Hot Encoding (`pd.get_dummies`)
+- Handling missing values using median imputation for numerical data
+- Scaling numerical features using `StandardScaler` to normalize their distribution
+
+### 4. Model Training
+- Training a **Logistic Regression** classifier from scratch
+- Plotting convergence curve using loss reduction to track optimization path and ensure proper convergence
+- Predicting the labels (`0` for deceased, `1` for survived)
+
+### 5. Model Evaluation
+- Accuracy score
+- Confusion matrix
+- Recall score
+- precision score
+- f1 score
+
+### 6. Inference
+- Making predictions on the unseen test set and generating a Kaggle-compliant submission file exported as `titanic_submission.csv`.
 
 ---
 
@@ -25,7 +46,9 @@ The project is implemented in a Jupyter Notebook and the goal is to build a bina
 
 ```
 ├── src/
-│   |── Logistic_Regression.ipynb
+│   └── Logistic_Regression.ipynb
+├── submission/
+│   |── submission_result.png
 │   └── titanic_submission.csv
 ├── visualizations/
 │   |── countplot_survival_rate.png

@@ -6,7 +6,7 @@ This Project contains the implementation of a **Logistic Regression** model buil
 
 ##  Project Overview
 
-The project is implemented in a Jupyter Notebook and the goal is to build a binary classification model using Logistic Regression to predict passenger survival (0 = No, 1 = Yes). The dataset is sourced from the famous [Kaggle Titanic Competition](https://www.kaggle.com/competitions/titanic/data).
+The project is implemented in a Jupyter Notebook and the goal is to build a binary classification model using Logistic Regression to predict passenger survival. The dataset is sourced from the famous [Kaggle Titanic Competition](https://www.kaggle.com/competitions/titanic/data).
 
 ---
 
